@@ -1,0 +1,72 @@
+소프트웨어 디자인 설계 패턴
+▶ MVC
+(Model Veiw Controller)
+
+
+M
+
+Model ->  dbms에 테이블의 컬럼을 클래스의 필드로 만들기
+
+VO, DTO는 클래스이름 뒤에 붙힌다
+
+VO, DTO는 목적이 다르다.
+전혀 다르다.
+
+무조건 테이블 컬럼과 똑같이 만드는게 VO -> Vaule Object
+
+DTO는 VO를 수정하지말고 화면에서 필요한 걸 추가, 화면에 보내야 할께 여러개일때
+로 DTO를 만들어서 컬럼과 동일하지 않는 필드를 생성해준다.
+화면에 필요한 것을 한번에 담자.
+EX) DBMS에서 조인을 할 때, DTO를 만들어서 조인 값을 DTO에 넣어준다.
+
+ex) UserVO, UserDTO
+
+private getter setter 무조건 만들어야한다!
+
+모델 객체!
+
+자바는 무조건 카멜!
+
+V -> view
+
+html, css 자바스크립트
+
+C
+
+controller
+
+요청과 응답을 통제하는데
+
+dbms CRUD을 DAO라는 클래스에 따로 담아서 DATA ACCESS OBJECT?
+분리함.
+
+DAO의 메소드는 화면에서
+리턴타입은 모델객체
+
+개발은 자바 중심, 설계는 DB 중심
+
+
+소프트웨어 디자인 설계 패턴
+▶ MVC
+(Model Veiw Controller)
+
+	M(Model) : DB에서 조회된 결과 값을 담기 위한 변수들이 선언된 클래스
+		- 클래스명 뒤에 VO, DTO라는 문자열을 붙여준다.
+		- V0 (Value Object): 테이블을 보고 그대로 만든 객체
+		- DTO(Data Transfer Object): 화면에 결과를 한 번에 묶어서 전달할 객체
+		
+	V(View) : 사용자에게 보여질 화면을 구성하는 부분
+			-Controller에 선언된 CRUD 메소드를 사용하는 부분
+		
+
+	C(Controller) : JSP 쳅터에서 더 자세히 알아보자!
+		ㄴDAO(Data Access Object): 테이블에 접근할 수 있는 메소드들이 선언된 클래스
+				- 접근 후 결과 값이 있을 경우 Model 객체에 담은 후 처리
+				- 클래스명 뒤에 DAO라는 문자열을 붙여준다.
+			*문자열안에 쿼리 명령어 담아둔다.
+		
+
+
+
+
+

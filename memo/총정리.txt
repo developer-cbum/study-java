@@ -1,0 +1,17 @@
+출력메소드: 오류를 구체화
+변수: 저장공간
+연산자: 최단산쉬관리삼대, 삼항 연산자(메소드)
+제어문: if, switch, for, while
+배열: 저장공간의 나열, 한 번에 여러 칸, 길이에 제한, 규칙성 부여
+메소드: 저장공간, 화면에서 입력받은 것을 매개변수로 받는다, 사용하는 쪽 생각을 하면서 작성한다.
+클래스: 타입이다, 주어이다, 추상적이다, 공통요소를 하나로 묶기, 딱 한 번만 선언하자!
+추상클래스: 강제성, 일반 메소드도 선언 가능, 강제성을 없앨 때 쓰기도 한다, 단독으로 쓰면 안될 때
+인터페이스: 강제성, 상수, 추상 메소드만 선언가능, 추상 메소드가 한 개 선언되면 함수형 인터페이스
+익명클래스: 구현하고 메모리에 올리자!, 구현되지 않은 필드를 구현하기 위한 클래스
+예외처리: try{}catch(){}, throw, throws, RuntimeException, Exception
+API: 복붙하고 구글링하고 남에 거 갖다쓰자!
+Object: toString(), equals(), hashCode()
+CollectionFramework: ArrayList, Stream API
+Thread: 단일, 멀티, 핵심: run() 재정의 -> 자원, new Thread() : 쓰레드 1개
+Date: Date(쓰지말자), Calendar(쓰자), SimpleDateFormat(원하는 형식으로 변경), LocalDateTime, LocalDate
+File: Stream(개별), Buffer(개별을 모았다가 한 번에 일괄처리)
